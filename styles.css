@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+/************************************************************HomePage************************************************************/
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home div {
+  margin-bottom: 2rem;
+}
+.home button {
+  padding: 0.5rem;
+}
+/************************************************************Game************************************************************/
+.game {
+  max-height: 100vh;
+  display: none;
+}
+/************************************************************BOARD************************************************************/
+.board {
+  margin: 5rem auto;
+  border-collapse: collapse;
+  border-style: hidden;
+  /*Remove all the outside
+    borders of the existing table*/
+}
+.board td {
+  height: 10rem;
+  width: 10rem;
+  border: 3px solid rgb(255, 255, 255);
+}
+.dvBoard {
+  position: relative;
+}
+/************************************************************CIRCLE************************************************************/
+.outer {
+  margin: auto;
+  background-color: white;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+}
+.inner {
+  background-color: black;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: relative;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+/************************************************************CROSS************************************************************/
+.backSlash {
+  margin: auto;
+  background-color: white;
+  height: 0.5rem;
+  width: 7rem;
+  border-radius: 20%;
+  transform: rotate(45deg);
+  position: relative;
+  bottom: 6px;
+}
+.forwardSlash {
+  margin: auto;
+  background-color: white;
+  height: 0.5rem;
+  width: 7rem;
+  border-radius: 20%;
+  transform: rotate(-45deg);
+}
+/************************************************************SCORE************************************************************/
+.score {
+  margin: auto;
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+}
+.score div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+/************************************************************OVERLAY************************************************************/
+.overlay {
+  background-color: transparent;
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.winLine {
+  margin: auto;
+  background-color: white;
+  height: 0.5rem;
+  width: 30rem;
+  border-radius: 20%;
+}
+.win1 {
+  transform: translate(0, 154px);
+}
+.win2 {
+  transform: translate(0, 320px);
+}
+.win3 {
+  transform: translate(0, 483px);
+}
+.win4 {
+  transform: translate(-166px, 326px) rotate(90deg);
+}
+.win5 {
+  transform: translate(0, 326px) rotate(90deg);
+}
+.win6 {
+  transform: translate(163px, 326px) rotate(90deg);
+}
+.win7 {
+  width: 40rem;
+  transform: translate(0, 323px) rotate(45deg);
+}
+.win8 {
+  width: 40rem;
+  transform: translate(0, 323px) rotate(-45deg);
+}

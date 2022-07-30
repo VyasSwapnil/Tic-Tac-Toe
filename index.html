@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="home" id="home">
+      <div><input type="radio" value="multi" name="mode" />Multiplayer <input type="radio" value="single" name="mode" />Singleplayer</div>
+      <button type="button" onclick="fnPlay()">Play</button>
+    </div>
+    <div class="game" id="game">
+      <table class="board">
+        <tr>
+          <td id="11" onclick="fnBoxClick(this)"></td>
+          <td id="12" onclick="fnBoxClick(this)"></td>
+          <td id="13" onclick="fnBoxClick(this)"></td>
+        </tr>
+        <tr>
+          <td id="21" onclick="fnBoxClick(this)"></td>
+          <td id="22" onclick="fnBoxClick(this)"></td>
+          <td id="23" onclick="fnBoxClick(this)"></td>
+        </tr>
+        <tr>
+          <td id="31" onclick="fnBoxClick(this)"></td>
+          <td id="32" onclick="fnBoxClick(this)"></td>
+          <td id="33" onclick="fnBoxClick(this)"></td>
+        </tr>
+      </table>
+      <div class="score">
+        <div><span id="p1">PLAYER 1 (X)</span><span id="p1Score">0</span></div>
+        <div><span id="tie">TIE</span><span id="tieScore">0</span></div>
+        <div><span id="p2">PLAYER 2 (O)</span><span id="p2Score">0</span></div>
+      </div>
+    </div>
+    <div id="overlay" class="overlay" onclick="fnNextRound()"></div>
+    <script type="text/javascript" src="./logic.js"></script>
+  </body>
+</html>
